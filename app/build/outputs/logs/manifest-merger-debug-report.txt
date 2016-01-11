@@ -1,0 +1,83 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:2:1-34:12
+	xmlns:android
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:3:5-38
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:5:22-72
+uses-permission#android.permission.SEND_SMS
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.READ_CALENDAR
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:7:5-72
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:7:22-69
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:8:5-72
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:8:22-69
+application
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:10:5-32:19
+MERGED from [com.android.support:appcompat-v7:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:12:9-43
+	android:theme
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.victorlecointre.mps.MainActivity
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:15:9-23:20
+	android:label
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:17:13-45
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:16:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.victorlecointre.mps.CalendarList
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:24:9-31:20
+	android:label
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:26:13-65
+	android:parentActivityName
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:27:13-55
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:25:13-41
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:28:13-30:72
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:29:17-63
+	android:value
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:30:17-69
+uses-sdk
+INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/AndroidManifest.xml:15:5-42
+	android:targetSdkVersion
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml
