@@ -11,4 +11,9 @@
         android:orderInCategory="2"
         app:showAsAction="always" />
 
+    <item android:id="@+id/menu_sms"
+        android:icon="@drawable/ic_action_sms4"
+        android:title="Set Sms"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
 </menu>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Personal Secretary</string>
+    <string name="app_name">CallMeMaybe</string>
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_calendar_list">CalendarList</string>
