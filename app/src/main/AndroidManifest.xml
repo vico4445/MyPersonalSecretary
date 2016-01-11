@@ -29,6 +29,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.victorlecointre.mps.MainActivity" />
         </activity>
+        <activity
+            android:name=".Sms"
+            android:label="@string/title_activity_sms"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.victorlecointre.mps.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

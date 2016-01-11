@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:2:1-34:12
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:2:1-42:12
 	xmlns:android
 		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:2:11-69
 	package
@@ -30,7 +30,7 @@ ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSec
 	android:name
 		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:8:22-69
 application
-ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:10:5-32:19
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:10:5-40:19
 MERGED from [com.android.support:appcompat-v7:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/AndroidManifest.xml:16:5-19
 	android:label
@@ -71,6 +71,14 @@ ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSec
 		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:29:17-63
 	android:value
 		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:30:17-69
+activity#com.victorlecointre.mps.Sms
+ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:32:9-39:20
+	android:label
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:34:13-55
+	android:parentActivityName
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:35:13-55
+	android:name
+		ADDED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml:33:13-32
 uses-sdk
 INJECTED from /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:21.0.3] /Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/AndroidManifest.xml:15:5-42

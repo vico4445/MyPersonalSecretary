@@ -337,6 +337,12 @@ int drawable abc_textfield_search_default_mtrl_alpha 0x7f020031
 int drawable abc_textfield_search_material 0x7f020032
 int drawable cal 0x7f020033
 int drawable ic_action_refresh 0x7f020034
+int drawable ic_action_sms 0x7f020035
+int drawable ic_action_sms2 0x7f020036
+int drawable ic_action_sms3 0x7f020037
+int drawable ic_action_sms4 0x7f020038
+int drawable ic_action_sms5 0x7f020039
+int drawable iconsms 0x7f02003a
 int id SMS_Example 0x7f0c0048
 int id ScrollViewLinearLayout 0x7f0c0040
 int id action_bar 0x7f0c0031
@@ -352,7 +358,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c002e
 int id action_mode_bar_stub 0x7f0c002d
 int id action_mode_close_button 0x7f0c0020
-int id action_settings 0x7f0c004b
+int id action_settings 0x7f0c004c
 int id activity_chooser_view_content 0x7f0c0021
 int id always 0x7f0c0016
 int id beginning 0x7f0c0013
@@ -379,6 +385,7 @@ int id listMode 0x7f0c0009
 int id listSMSSent 0x7f0c0047
 int id list_item 0x7f0c0025
 int id menu_refresh 0x7f0c004a
+int id menu_sms 0x7f0c004b
 int id middle 0x7f0c0015
 int id never 0x7f0c0019
 int id none 0x7f0c000e

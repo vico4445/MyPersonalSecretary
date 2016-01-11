@@ -1303,6 +1303,12 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int cal=0x7f020033;
         public static final int ic_action_refresh=0x7f020034;
+        public static final int ic_action_sms=0x7f020035;
+        public static final int ic_action_sms2=0x7f020036;
+        public static final int ic_action_sms3=0x7f020037;
+        public static final int ic_action_sms4=0x7f020038;
+        public static final int ic_action_sms5=0x7f020039;
+        public static final int iconsms=0x7f02003a;
     }
     public static final class id {
         public static final int SMS_Example=0x7f0c0048;
@@ -1320,7 +1326,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c002e;
         public static final int action_mode_bar_stub=0x7f0c002d;
         public static final int action_mode_close_button=0x7f0c0020;
-        public static final int action_settings=0x7f0c004b;
+        public static final int action_settings=0x7f0c004c;
         public static final int activity_chooser_view_content=0x7f0c0021;
         public static final int always=0x7f0c0016;
         public static final int beginning=0x7f0c0013;
@@ -1347,6 +1353,7 @@ containing a value of this type.
         public static final int listSMSSent=0x7f0c0047;
         public static final int list_item=0x7f0c0025;
         public static final int menu_refresh=0x7f0c004a;
+        public static final int menu_sms=0x7f0c004b;
         public static final int middle=0x7f0c0015;
         public static final int never=0x7f0c0019;
         public static final int none=0x7f0c000e;
