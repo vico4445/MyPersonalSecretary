@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/res/merged/debug/menu/menu_sms.xml",
+        "source": "/Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/res/menu/menu_sms.xml"
+    },
+    {
+        "merged": "/Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/res/merged/debug/menu/menu_calendar_list.xml",
+        "source": "/Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/res/menu/menu_calendar_list.xml"
+    },
+    {
+        "merged": "/Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/victorlecointre/Documents/Développement/Android/MyPersonalSecretary/app/src/main/res/menu/menu_main.xml"
+    }
+]
