@@ -8,7 +8,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.CalendarContract.Events;
+import android.provider.CalendarContract.*;
 import android.provider.ContactsContract.PhoneLookup;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.SmsManager;
@@ -20,8 +20,8 @@ import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -260,10 +260,15 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
                     Date t_max = new Date(t.getTime_max());
                     SimpleDateFormat df = new SimpleDateFormat("HH:mm");
 
-                    smsManager.sendTextMessage(phoneNumber, null, String.format(message, df.format(t_min), df.format(t_max)), null, null);
-                    Toast.makeText(context, "SMS sent to :" + phoneNumber + "\nCall back : [" + df.format(t_min) + "-" + df.format(t_max) + "]", Toast.LENGTH_LONG).show();
-                    UpdateSharedPref(phoneNumber, df.format(t_min), df.format(t_max)); // Keep in memory fact of sending the sms
-
+                    SMS_Value = context.getSharedPreferences(PREFS_SMS_MESSAGE, 0);
+                    if( (message = SMS_Value.getString("SMS_Today","")) != "") {
+                        smsManager.sendTextMessage(phoneNumber, null, String.format(message, df.format(t_min), df.format(t_max)), null, null);
+                        Toast.makeText(context, "SMS sent to :" + phoneNumber + "\nCall back : [" + df.format(t_min) + "-" + df.format(t_max) + "]", Toast.LENGTH_LONG).show();
+                        UpdateSharedPref(phoneNumber, df.format(t_min), df.format(t_max)); // Keep in memory fact of sending the sms
+                    }
+                    else{
+                        Toast.makeText(context, "Error in custom SMS Today", Toast.LENGTH_LONG).show();
+                    }
                 } else {
                     smsManager.sendTextMessage(phoneNumber, null, message_tomorrow, null, null);
                 }

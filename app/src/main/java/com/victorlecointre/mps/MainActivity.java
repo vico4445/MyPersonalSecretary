@@ -1,7 +1,6 @@
 package com.victorlecointre.mps;
 
 //import android.app.Activity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -9,8 +8,8 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -23,11 +22,11 @@ import android.widget.SimpleAdapter;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.victorlecointre.additional_features.*;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import com.victorlecointre.additional_features.*;
 
 
 public class MainActivity extends ActionBarActivity implements OnCallAlgorithm {
@@ -95,11 +94,16 @@ public class MainActivity extends ActionBarActivity implements OnCallAlgorithm {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // If the user clicks the "Refresh" button.
-        if(item.getItemId() == R.id.menu_refresh) {
+        if(item.getItemId() == R.id.menu_refresh){
             setRefreshActionButtonState(Boolean.TRUE);
             updateSharedPref();
             InitialiseListView();
             setRefreshActionButtonState(Boolean.FALSE);
+            return true;
+        }
+        else if (item.getItemId() == R.id.menu_sms){
+            Intent intent = new Intent(this, Sms.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
