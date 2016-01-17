@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-//Test
+
 public class Sms extends ActionBarActivity implements OnCallAlgorithm{
 
     private SharedPreferences SMS_Value ;
