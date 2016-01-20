@@ -44,7 +44,6 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
     private Boolean Occupied = Boolean.FALSE;
     private String message;
 
- //   private int call_state = 0; // Is it ringinf ?
     @Override
     public void onReceive(Context context, Intent intent) {
         this.ctx = context;
@@ -54,7 +53,6 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
         if (extras != null) {
             String state = extras.getString(TelephonyManager.EXTRA_STATE);
             if (state.equals(TelephonyManager.EXTRA_STATE_RINGING)) {
-                //call_state = 1;
                 String phoneNumber = extras.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
 
                 update_current_and_max_time(); // Update time to look into the calendar [current time ;  end of day]
@@ -68,9 +66,6 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
                 t = SelectTimeTable(l,0); // Return the TimeTable when to callback [t_min ; t_max]
                 action(context,t,phoneNumber); // Send an Sms if the user is busy
             }
-//            else{
-//                call_state = 0;
-//            }
         }
     }
 
