@@ -16,11 +16,11 @@ public interface OnCallAlgorithm {
     public static final String PREFS_ACTIV = "Active";
     public static final String PREFS_SMS_MESSAGE = "SMSmessage";
 
-    /*public String message = "I am currently busy, please call me back between %s and %s this day " +
+    /*public String default_message = "I am currently busy, please call me back between %s and %s this day " +
             "\nThank you" +
             "\n"+
-            "\n#This message had been automatically sent by the app CallMeMaybe";
-    */
+            "\n#This message had been automatically sent by the app CallMeMaybe";*/
+
     public String message_tomorrow = "I am busy today, please call me back another day" +
             "\nThank you" +
             "\n"+

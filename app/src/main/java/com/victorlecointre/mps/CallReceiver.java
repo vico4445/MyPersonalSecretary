@@ -44,14 +44,17 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
     private Boolean Occupied = Boolean.FALSE;
     private String message;
 
+ //   private int call_state = 0; // Is it ringinf ?
     @Override
     public void onReceive(Context context, Intent intent) {
         this.ctx = context;
 
+        System.out.println("DEBUG : onReceive");
         Bundle extras = intent.getExtras();
         if (extras != null) {
             String state = extras.getString(TelephonyManager.EXTRA_STATE);
             if (state.equals(TelephonyManager.EXTRA_STATE_RINGING)) {
+                //call_state = 1;
                 String phoneNumber = extras.getString(TelephonyManager.EXTRA_INCOMING_NUMBER);
 
                 update_current_and_max_time(); // Update time to look into the calendar [current time ;  end of day]
@@ -65,6 +68,9 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
                 t = SelectTimeTable(l,0); // Return the TimeTable when to callback [t_min ; t_max]
                 action(context,t,phoneNumber); // Send an Sms if the user is busy
             }
+//            else{
+//                call_state = 0;
+//            }
         }
     }
 
@@ -261,14 +267,12 @@ public class CallReceiver extends BroadcastReceiver implements OnCallAlgorithm{
                     SimpleDateFormat df = new SimpleDateFormat("HH:mm");
 
                     SMS_Value = context.getSharedPreferences(PREFS_SMS_MESSAGE, 0);
-                    if( (message = SMS_Value.getString("SMS_Today","")) != "") {
-                        smsManager.sendTextMessage(phoneNumber, null, String.format(message, df.format(t_min), df.format(t_max)), null, null);
-                        Toast.makeText(context, "SMS sent to :" + phoneNumber + "\nCall back : [" + df.format(t_min) + "-" + df.format(t_max) + "]", Toast.LENGTH_LONG).show();
-                        UpdateSharedPref(phoneNumber, df.format(t_min), df.format(t_max)); // Keep in memory fact of sending the sms
-                    }
-                    else{
-                        Toast.makeText(context, "Error in custom SMS Today", Toast.LENGTH_LONG).show();
-                    }
+                    message = SMS_Value.getString("SMS_Today", context.getString(R.string.SMS_Example));
+
+                    smsManager.sendTextMessage(phoneNumber, null, String.format(message, df.format(t_min), df.format(t_max)), null, null);
+                    Toast.makeText(context, "SMS sent to :" + phoneNumber + "\nCall back : [" + df.format(t_min) + "-" + df.format(t_max) + "]", Toast.LENGTH_LONG).show();
+                    UpdateSharedPref(phoneNumber, df.format(t_min), df.format(t_max)); // Keep in memory fact of sending the sms
+
                 } else {
                     smsManager.sendTextMessage(phoneNumber, null, message_tomorrow, null, null);
                 }

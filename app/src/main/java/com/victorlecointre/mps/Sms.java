@@ -27,8 +27,8 @@ public class Sms extends ActionBarActivity implements OnCallAlgorithm{
         mEdit = (EditText) findViewById(R.id.SMS_Example);
 
         // Restore preferences
-        String message;
-        if ((message = SMS_Value.getString("SMS_Today", "")) != "") {
+        String message = SMS_Value.getString("SMS_Today", getString(R.string.SMS_Example));
+        if(message.compareTo(getString(R.string.SMS_Example)) != 0) {
             mEdit.setText(message);
         }
     }
@@ -57,9 +57,36 @@ public class Sms extends ActionBarActivity implements OnCallAlgorithm{
 
     // Buttons responses
     public void SaveSMSChanges(View v){
-        editorSMS.putString("SMS_Today", mEdit.getText().toString());
+        String msg = CheckMessageFormat(mEdit.getText().toString());
+
+        editorSMS.putString("SMS_Today", msg);
         editorSMS.commit();
-        Toast.makeText(getApplicationContext(), "Changes Saved", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "New sms : "+msg, Toast.LENGTH_LONG).show();
+
+    }
+
+    public String CheckMessageFormat(String message)
+    {
+        String s_char = "%s";
+        if(message.contains(s_char))
+        {
+            int lastIndex = 0;
+            int count = 0;
+
+            while(lastIndex != -1){
+                lastIndex = message.indexOf(s_char,lastIndex);
+                if(lastIndex != -1){
+                    count = count + 1;
+                    lastIndex += s_char.length();
+                }
+            }
+
+            if(count == 2) return message;
+            else{
+                Toast.makeText(getApplicationContext(),"You need to have twice '%s' character in your sms",Toast.LENGTH_LONG).show();
+            }
+        }
+        return getString(R.string.SMS_Example);
     }
 
     public void action(Context context,TimeTable t, String phoneNumber){}
